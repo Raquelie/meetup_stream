@@ -1,7 +1,5 @@
 import requests
 from datetime import datetime
-from create_db import Groups, DailyEvents
-from pony.orm import *
 import os
 from flask import Flask, flash, request, redirect
 from flask import send_from_directory
@@ -23,4 +21,4 @@ def top_cities(num):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host= '0.0.0.0')

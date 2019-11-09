@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import os
 import websocket
 import json
@@ -39,7 +38,6 @@ def save_to_database(dict_data):
         # Insert the event
         db.insert("DailyEvents",  date=datetime.now(), city=dict_data['group']['group_city'],
                   country=dict_data['group']['group_country'], group_id=dict_data['group']['group_id'])
-
     insert_data()
 
 
